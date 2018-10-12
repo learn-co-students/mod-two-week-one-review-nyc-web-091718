@@ -1,28 +1,34 @@
-<%= form_for @sea do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<div class="container">
+  <% #form_for @order, :html => {:class => "foo"} %>
+  <%= form_for @sea, html: {class: "form-control"} do |f| %>
+  <p><%= f.label :name %></p>
+    <p><%= f.text_field :name %></p>
 
-  <%= f.label :temperature %>
-  <%= f.number_field :temperature %>
+    <p><%= f.label :temperature %></p>
+    <p><%= f.number_field :temperature %></p>
 
-  <%= f.label :bio %>
-  <%= f.text_area :bio %>
+    <p><%= f.label :bio %></p>
+    <p><%= f.text_area :bio %></p>
 
-  <%= f.label :image_url %>
-  <%= f.text_field :image_url %>
+    <p><%= f.label :image_url %></p>
+    <p><%= f.text_field :image_url %></p>
 
-  <%= f.label :mood %>
-  <%= f.text_field :mood %>
+    <p><%= f.label :mood %></p>
+    <p><%= f.text_field :mood %></p>
 
-  <%= f.label :favorite_color %>
-  <%= f.text_field :favorite_color %>
+    <p><%= f.label :favorite_color %></p>
+    <p><%= f.text_field :favorite_color %></p>
 
-  <%= f.label :scariest_creature %>
-  <%= f.text_field :scariest_creature %>
+    <p><%= f.label :scariest_creature %></p>
+    <p><%= f.text_field :scariest_creature %></p>
 
-  <%= f.label :has_mermaids %>
-  <%= f.check_box :has_mermaids %>
+    <p><%= f.label :has_mermaids %></p>
+    <p><%= f.check_box :has_mermaids %></p>
 
-  <%=  f.submit %>
+    <%=  f.submit %>
 
   <% end %>
+  <div class="text-center">
+    <button class="btn btn-info" style="margin: 1em"><a class="btn-info" href="/seas">All Seas</a></button>
+  </div>
+</div>
