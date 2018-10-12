@@ -23,16 +23,16 @@ class SeasController < ApplicationController
     @sea = Sea.find(params[:id])
   end
 
-  def patch
+  def update
 
     @sea = Sea.find(params[:id])
-  
+
     @sea.update(sea_params)
 
     redirect_to sea_path(@sea)
   end
 
-  def delete
+  def destroy
     @sea = Sea.find(params[:id])
     @sea.destroy
 
