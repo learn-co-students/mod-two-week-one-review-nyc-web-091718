@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+### NOTES
+1.) We need models
+2.) We need a DB with table for model
+3.) 
