@@ -1,0 +1,9 @@
+<p><%= link_to 'Add a Sea', new_sea_path %></p>
+</div>
+<% @seas.each do |sea| %>
+<p><%= sea.name %></p>
+<p><%= sea.bio %></p>
+<p><%= link_to 'Sea Profile', sea_path(sea) %></p>
+<br>
+<% end %>
+<div class="">
